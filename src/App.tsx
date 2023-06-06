@@ -8,18 +8,19 @@ import Membro from "./componentes/relacao/Membro";
 import UsuarioLogado from "./componentes/UsuarioLogado";
 import Botao from "./componentes/Botao";
 import Contador from "./componentes/Contador";
-
+import DimensoesFixas from "./componentes/DimensoesFixas";
+import Mega from "./componentes/Mega";
+import Calculadora from "./Calculadora/Calculadora";
 
 export default class App extends Component {
   render() {
     return(
-      <View style = {estilos.container}>
+      
+      <View style={estilos.container}>
 
-        <Contador valorInicial={50}/>
+        {/*<Contador valorInicial={50}/>*/}
         
         {/*<Botao />*/} 
-
-
 
         {/*<UsuarioLogado usuario={ {nome: 'teste', email: 'teste@teste.com'}} />
         <UsuarioLogado usuario ={ {nome: 'teste 2'}}/>
@@ -27,7 +28,7 @@ export default class App extends Component {
         <UsuarioLogado usuario= {null}/>
         <UsuarioLogado usuario = { {}}/>*/}
 
-    { /* <Simples texto = 'Ruan' />*/}
+    { /* <Simples texto = 'Daniel' />*/}
        {/*<Frag titulo = "Cadastro" 
           subTitulo = " Tela de cadastro de produto" />*/ }
      
@@ -42,7 +43,11 @@ export default class App extends Component {
       <Membro nome = "Bianca" sobreNome = "Cunha"/>
       <Membro nome = "Gustavo" sobreNome = "Cunha"/>
       </Familia>*/}
-      
+
+      {/*<DimensoesFixas />*/}
+     {/* <Mega qtdNumeros={7}/>*/}
+     <Calculadora />
+
       </View>
     );
 
